@@ -35,7 +35,13 @@ const gltfLoader = new GLTFLoader()
 gltfLoader.setDRACOLoader(dracoLoader)
 
 
-
+/**
+ * Objects
+ */
+const geometry = new THREE.BoxGeometry(1, 1, 1)
+const material = new THREE.MeshBasicMaterial({color: 0xff0000})
+const box = new THREE.Mesh(geometry, material)
+scene.add(box)
 
 
 /**
